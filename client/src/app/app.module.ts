@@ -6,21 +6,20 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OneHaltMaterialModule } from './material-module';
 import { HomeComponent } from './home/home.component';
-import {ProductsRoutingModule} from './products/products-routing.module'
+import { ProductsRoutingModule } from './products/products-routing.module';
+import { StarterModule } from './starter/starter.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-  ],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     OneHaltMaterialModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    StarterModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
